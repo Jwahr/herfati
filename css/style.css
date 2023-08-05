@@ -1,0 +1,262 @@
+/* BODY */
+body {
+    background-color:#85a5e4;
+    margin: 0;
+}
+
+/* HEADER */
+#header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lives,
+#time {
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: white
+}
+
+#noOfLives {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    font-size: 15px;
+    top: 3.5%;
+    right: 16%;
+}
+#scoreValue {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    font-size: 15px;
+    top: 3.5%;
+    left: 4%;
+}
+
+.timerDisplay {
+    position: absolute;
+    padding: 5px;
+    right: 3%;
+    top: 5.5%;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#score {
+    margin: auto;
+    margin-left: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: white
+}
+
+/* INTRO SIGN */
+.intro-sign {
+    background-color: rgb(192, 58, 58);
+    box-shadow: 6px 6px 6px rgba(80, 39, 12, 1);
+    width: 60vw;
+    position: flex;
+    top: 150px;
+    right: 20%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    /* margin-top: 50px; */
+    padding: 30px;
+    position: absolute;
+}
+
+.moving-clouds {
+    background-image: url('../images/moving-clouds.gif');
+    height: 300px;
+    margin: auto;
+    margin-top: 80px;
+    /* z-index: -1; */
+}
+
+#intro-text {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    text-shadow: 2px 4px 4px rgba(80, 39, 12, 1);
+    color: rgb(238, 146, 146);
+}
+
+#start-game, #start-again {
+    border: none;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px rgb(7, 7, 7);
+    position: absolute;
+
+    top: 300px;
+    width: 90%;
+    color: white;
+    font-size: 25px;
+}
+#start-again{
+    top:550px;
+    left: 70px
+}
+.change-theme{
+    border: none;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 0px rgb(7, 7, 7);
+    position: absolute;
+    left: 35%;
+    top: 340px;
+    color: white;
+}
+#morningTheme{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 51%;
+    top: 400px;
+    background-color:  #85a5e4;
+}
+#nightTheme{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 47%;
+    top: 400px;
+    background-color:#0e1c38;
+}
+@media screen and (max-width: 1100px) {
+    #start-game {
+        top: 350px;
+    }
+    #noOfLives{
+      right:33%
+    }
+    .timerDisplay{
+      right: 6%;
+      top: 5.2%;
+    }
+    #scoreValue{
+      left: 8%;
+    }
+  }
+
+/* MARIO CHARACTER */
+#running-mario {
+    width: 110px;
+    position: absolute;
+    bottom: 50px;
+    display: block;
+    z-index: 10;
+}
+/* RESULTS DIV  */
+#results-div{
+    position: absolute;
+    top: 0;
+    /* opacity: 0.7; */
+    width: 100vw;
+    height: 100vw;
+    background-color: #0e1c38;
+    
+}
+/* GRASS */
+#grass {
+    background-image: url('../images/brick-wall.webp');
+    /* background-color: green; */
+    width: 100vw;
+    height: 55px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.pipe1 {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    bottom: 50px;
+    left: 600px;
+}
+
+.pipe2 {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    bottom: 50px;
+    left: 1100px;
+}
+
+.pipe3 {
+    position: absolute;
+    width: 70px;
+    bottom: 50px;
+    left: 2100px;
+
+}
+.plant{
+    position: absolute;
+    width: 70px;
+    bottom: 50px;
+    left: 1900px;
+}
+.monster{
+    width:50px;
+    height:50px;
+    position: absolute;
+    bottom: 46px;
+    left: 800px;
+}
+#mystery-box{
+    position: absolute;
+    bottom: 200px;
+    left: 800px;
+}
+/* RESULTS PART */
+.images{
+    width: 300px;
+    height: 300px;
+    top: 65%;
+    left: 40%;
+    position: absolute;
+    margin-top: -250px;
+}
+#bomb-img{
+    width: 300px;
+    height: 300px;
+    top: 65%;
+    left: 40%;
+}
+#princess{
+    position: absolute;
+    bottom: 50px;
+    width: 120px;
+    left: 2100px;
+}
+#congrats-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+#game-over-text, #you-won{
+    /* position: absolute; */
+    margin:100px;
+    left: 50%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 5px 5px 0px rgb(7, 7, 7);
+    bottom: 70px;
+}

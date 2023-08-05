@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- DONE small jump audio is not working -->
+<!-- DONE get the position of moving mario -->
+<!-- DONE compare positions of mario and the pipe, game over if they crash -->
+<!-- DONE on smaller screen size, the start game button position needs to be changed -->
+<!-- make the monster move between two pipes only -->
+<!-- add a condition in left and right to specify whether or not mario can go further -->
+<!-- DONE stop the scrolling -->
+<!-- add a flag at the end for winning condition -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="" href='//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js'>
+    <title>Mario Game</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div id="left-container">
+            <p id="score">Score</p>
+            <p id="scoreValue">0</p>
+
+        </div>
+        <div id="right-container">
+            <p class="lives" id="lives">Live</p>
+            <p class="noOfLives" id="noOfLives"></p>
+            <p class="time" id="time">Time</p>
+            <div class="timerDisplay">
+                00:00
+            </div>
+            <div class="buttons">
+                <button class="startTimer" id="startTimer">Start</button>
+                <button id="resetTimer">Reset</button>
+            </div>
+        </div>
+    </header>
+    <div class="moving-clouds"></div>
+    <!-- INTRO SIGN -->
+    <div class="intro-sign" id="intro-sign">
+        <h1 id="intro-text">SUPER MARIO BROS.</h1>
+        <button id="start-game"> > Start Game</button>
+        <p class="change-theme">Choose a Theme</p>
+        <button id="morningTheme"></button>
+        <button id="nightTheme"></button>
+    </div>
+    <!-- <div id="results-div"></div> -->
+    <!-- MARIO -->
+    <img id='running-mario' src="images/running-mario.gif" alt="running-mario">
+    <img class="monster" id='monster' src="images/monster.gif" alt="">
+    <!-- OBSTACLES AND IMAGES-->
+    <img class="pipe1" id="pipe1" src="images/Mario_pipe.png" alt="">
+    <img class="pipe2" id="pipe2" src="images/Mario_pipe.png" alt="">
+    <img class="pipe3" id="pipe3" src="images/Mario_pipe.png" alt="">
+    <img class='plant' id='plant' src="images/plant.gif" alt="">
+    <img id="mystery-box" src="images/mystery-box.gif" alt="">
+    <img class='images' id='bomb-img' src="images/Bomb.gif" alt="">
+    <img class='images' src="images/clapping.gif" alt="">
+    <img class='images' id='impressive-img' src="images/impressive.gif" alt="">
+    <img class='images' id="laugh-img" src="images/laughing.gif" alt="">
+    <img class='images' id="laugh2-img" src="images/laughing2.gif" alt="">
+    <img class='images' id="loser-img" src="images/loser.gif" alt="">
+    <img class='images' id="neverwin-img" src="images/neverWin.gif" alt="">
+    <img class='images' id="laugh3-img" src="images/YYdO.gif" alt="">
+    <img id='princess'src="images/princess.gif" alt="">
+    <img class = 'images' id ='clapping-img' src="images/clapping.gif" alt="">
+    <img id="congrats-img" src="images/congratss.gif" alt="">
+    <h1 id="game-over-text">GAME OVER!</h1>
+    <h1 id="you-won">CONGRATULATION!</h1>
+    <button id="start-again"> > Start Again</button>
+
+    <!-- <img id="pipe3" src="images/Mario_pipe.png" alt=""> -->
+    <!-- GREEN GRASS ON FLOOR-->
+    <div id="grass"></div>
+
+
+    <!-- sound elements -->
+    <audio id="game-over">
+        <source src="sounds/smb_gameover.wav" type="audio/mpeg">
+    </audio>
+    <audio id="game-start">
+        <source src="sounds/smb_pause.wav" type="audio/mpeg">
+    </audio>
+    <audio id="small-jump">
+        <source src="sounds/smb_jump-small.wav" type="audio/mpeg">
+    </audio>
+    <audio id="super-jump" src="sounds/smb_jump-super.wav"></audio>
+    <audio id="stage-clear" src="sounds/smb_stage_clear.wav"></audio>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
